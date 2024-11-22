@@ -1,11 +1,23 @@
-#Basic CICD Pipeline for a ML Model 
+# MNIST Classification with CI/CD
 
-This is a basic CICD pipeline for a ML Model using GitHub Actions.
+![ML Pipeline](https://github.com/YOUR-USERNAME/Test-Run/actions/workflows/ml-pipeline.yml/badge.svg)
 
-## Steps to create a CICD pipeline for a ML Model
+## Overview
+This project implements a CNN-based MNIST classifier with complete CI/CD pipeline using GitHub Actions. The model is a lightweight CNN with less than 25,000 parameters that achieves >95% accuracy on MNIST.
 
-1. Create a new repository
-2. Add the workflow file to the repository
-3. Add the train.py file to the repository
-4. Add the test.py file to the repository
-5. Add the model.py file to the repository
+## Model Architecture
+- 2 Convolutional layers with max pooling
+- 2 Fully connected layers
+- Dropout for regularization
+- Total parameters: ~13,242
+
+## CI/CD Pipeline Features
+- Automated model training
+- Parameter count verification (<25,000)
+- Input shape validation (28x28)
+- Output dimension check (10 classes)
+- Accuracy testing (>95%)
+- Automated model artifact storage
+
+## Local Development
+1. Create virtual environment:
